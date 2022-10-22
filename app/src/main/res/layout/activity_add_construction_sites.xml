@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pg"
+    tools:context=".Administrator_menu"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-13dp">
+
+    <TextView
+        android:id="@+id/textsupervisor_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Add construction sites"
+        android:textAlignment="center"
+        android:textColor="#26012C"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/textCons_Site_ID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textCons_Site_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="65dp"
+        android:text="Construction site ID"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/editCon_Site_ID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textsupervisor_menu" />
+
+    <EditText
+        android:id="@+id/editCon_Site_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="5dp"
+        android:minHeight="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/textLocation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCons_Site_ID"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:text="Location"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/editLocation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editCon_Site_ID" />
+
+    <EditText
+        android:id="@+id/editLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="5dp"
+        android:minHeight="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/textNumber_of_perches"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textLocation"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textNumber_of_perches"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:text="Number of perches"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/editNumber_of_perches"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editLocation" />
+
+    <EditText
+        android:id="@+id/editNumber_of_perches"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="5dp"
+        android:minHeight="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/textClient_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNumber_of_perches"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textClient_name"
+        android:layout_width="match_parent"
+        android:layout_height="19dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:text="Client name"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/editClient_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNumber_of_perches" />
+
+    <EditText
+        android:id="@+id/editClient_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="5dp"
+        android:minHeight="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/textTime_period"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textClient_name"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textTime_period"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:text="Time period"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/editTime_period"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editClient_name" />
+
+    <EditText
+        android:id="@+id/editTime_period"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="5dp"
+        android:minHeight="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/textAssigned_supervisor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTime_period"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textAssigned_supervisor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:text="Assigned supervisor's userID"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/editAssigned_supervisor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTime_period" />
+
+    <EditText
+        android:id="@+id/editAssigned_supervisor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="3dp"
+        android:minHeight="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_add_construction_site"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textAssigned_supervisor"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btn_add_construction_site"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="78dp"
+        android:background="@drawable/btnlg"
+        android:text="Add"
+        android:textColor="#fafafa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editAssigned_supervisor" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

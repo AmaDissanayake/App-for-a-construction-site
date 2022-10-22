@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/add"
+    tools:context=".add_supervisors"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-13dp">
+
+    <TextView
+        android:id="@+id/textM_1stN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="65dp"
+        android:text="First name"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/editM_1stN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editM_1stN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/textM_LN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textM_1stN"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textM_LN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:text="Last name"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/editM_LN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editM_1stN" />
+
+    <EditText
+        android:id="@+id/editM_LN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/textM_NIC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textM_LN"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textM_NIC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:text="NIC"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/editM_NIC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editM_LN" />
+
+    <EditText
+        android:id="@+id/editM_NIC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/textM_PhnNum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textM_NIC"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textM_PhnNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:text="Phone number"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/editM_PhnNum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editM_NIC" />
+
+    <EditText
+        android:id="@+id/editM_PhnNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/textM_Assigned_SiteID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textM_PhnNum"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textM_Assigned_SiteID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:text="Assigned site number"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/editM_Assigned_SiteID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editM_PhnNum" />
+
+    <EditText
+        android:id="@+id/editM_Assigned_SiteID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/textM_WorkerID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textM_Assigned_SiteID"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textM_WorkerID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:text="Worker ID"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/editM_WorkerID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editM_Assigned_SiteID" />
+
+    <EditText
+        android:id="@+id/editM_WorkerID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="3dp"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnM_Add_Masonry_worker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textM_WorkerID"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btnM_Add_Masonry_worker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/btnlg"
+        android:text="Add Masonry worker"
+        android:textColor="#fafafa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editM_WorkerID" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

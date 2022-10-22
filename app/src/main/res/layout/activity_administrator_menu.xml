@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pg"
+    tools:context=".Administrator_menu"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-13dp">
+
+    <TextView
+        android:id="@+id/text_Mng_superv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="WELCOME ADMINISTRATOR"
+        android:textAlignment="center"
+        android:textColor="#26012C"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_add_construction_sites"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_add_construction_sites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/btnlg"
+        android:text="Add construction sites"
+        android:textColor="#fafafa"
+        app:layout_constraintBottom_toTopOf="@+id/btn_mng_super"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.658"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_Mng_superv" />
+
+    <Button
+        android:id="@+id/btn_mng_super"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/btnlg"
+        android:text="Manage supervisors"
+        android:textColor="#fafafa"
+        app:layout_constraintBottom_toTopOf="@+id/btn_mng_masonry1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_add_construction_sites" />
+
+    <Button
+        android:id="@+id/btn_mng_masonry1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/btnlg"
+        android:text="Manage masonry workers"
+        android:textColor="#fafafa"
+        app:layout_constraintBottom_toTopOf="@+id/btn_mng_helpers1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_mng_super" />
+
+    <Button
+        android:id="@+id/btn_mng_helpers1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/btnlg"
+        android:text="Manage helpers"
+        android:textColor="#fafafa"
+        app:layout_constraintBottom_toTopOf="@+id/btn_logout_from_administrator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_mng_masonry1" />
+
+    <Button
+        android:id="@+id/btn_logout_from_administrator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/btnlg"
+        android:text="Log out"
+        android:textColor="#fafafa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.216"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_mng_helpers1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

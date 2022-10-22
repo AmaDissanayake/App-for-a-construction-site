@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">App1</string>
+
+    <string-array name="Attendance">
+        <item>Present</item>
+        <item>Absent</item>
+    </string-array>
+
+</resources>

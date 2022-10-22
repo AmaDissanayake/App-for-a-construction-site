@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pg"
+    tools:context=".Administrator_menu"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-13dp">
+
+    <TextView
+        android:id="@+id/textsupervisor_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="WELCOME SUPERVISOR"
+        android:textAlignment="center"
+        android:textColor="#26012C"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_mng_masnory2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_mng_masnory2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/btnlg"
+        android:text="Manage masonry workers"
+        android:textColor="#fafafa"
+        app:layout_constraintBottom_toTopOf="@+id/btn_mng_helpers2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textsupervisor_menu" />
+
+    <Button
+        android:id="@+id/btn_mng_helpers2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/btnlg"
+        android:text="Manage helpers"
+        android:textColor="#fafafa"
+        app:layout_constraintBottom_toTopOf="@+id/btn_mark_attendance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_mng_masnory2" />
+
+    <Button
+        android:id="@+id/btn_mark_attendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/btnlg"
+        android:text="Employee attendance"
+        android:textColor="#fafafa"
+        app:layout_constraintBottom_toTopOf="@+id/btn_calc_salary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_mng_helpers2" />
+
+    <Button
+        android:id="@+id/btn_calc_salary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/btnlg"
+        android:text="Salary calculation"
+        android:textColor="#fafafa"
+        app:layout_constraintBottom_toTopOf="@+id/btn_logout_from_supervisor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_mark_attendance" />
+
+    <Button
+        android:id="@+id/btn_logout_from_supervisor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/btnlg"
+        android:text="Log out"
+        android:textColor="#fafafa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_calc_salary" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

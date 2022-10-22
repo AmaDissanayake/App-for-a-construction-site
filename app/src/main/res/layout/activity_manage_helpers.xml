@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pg"
+    tools:context=".Administrator_menu"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-13dp">
+
+    <TextView
+        android:id="@+id/text_mng_helpers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="MANAGE HELPERS"
+        android:textAlignment="center"
+        android:textColor="#26012C"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_add_helpers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_add_helpers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btnlg"
+        android:text="Add helpers"
+        android:textColor="#fafafa"
+        app:layout_constraintBottom_toTopOf="@+id/btn_update_helpers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_mng_helpers" />
+
+    <Button
+        android:id="@+id/btn_update_helpers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btnlg"
+        android:text="Update helpers"
+        android:textColor="#fafafa"
+        app:layout_constraintBottom_toTopOf="@+id/btn_delete_helpers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_add_helpers" />
+
+    <Button
+        android:id="@+id/btn_delete_helpers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btnlg"
+        android:text="Delete helpers"
+        android:textColor="#fafafa"
+        app:layout_constraintBottom_toTopOf="@+id/btn_view_helpers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_update_helpers" />
+
+    <Button
+        android:id="@+id/btn_view_helpers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="316dp"
+        android:background="@drawable/btnlg"
+        android:text="View helpers"
+        android:textColor="#fafafa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_delete_helpers" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

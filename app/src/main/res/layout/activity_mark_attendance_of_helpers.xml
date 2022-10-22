@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pg"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MarkAttendanceOfHelpers">
+
+    <EditText
+        android:id="@+id/et_date2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginBottom="17dp"
+        android:textColor="#26012C"
+        android:hint="Select Date"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/textH"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#26012C"
+        android:text="Helper workerID"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/editTextHWorkerID"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginBottom="17dp"
+        android:textColor="#26012C"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/textselectStatusH"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#26012C"
+        android:text="Select the attendance status"
+        android:textSize="20sp"/>
+
+    <Spinner
+        android:id="@+id/spinnerAH"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#26012C"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btnH_markAttendance"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/btnlg"
+        android:text="Mark Attendance"
+        android:textColor="#fafafa"/>
+
+</LinearLayout>
